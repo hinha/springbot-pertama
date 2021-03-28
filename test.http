@@ -1,0 +1,19 @@
+POST http://localhost:8080/api/products
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "",
+  "price": 300,
+  "quantity": 10
+}
+
+### Get Product valid
+
+GET http://localhost:8080/api/products/1
+Accept: application/json
+
+### Get Product invalid
+
+GET http://localhost:8080/api/products/0
+Accept: application/json

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  practiceWeb-postgres:
+    container_name: "practiceWeb-postgres"
+    image: library/postgres:12-alpine
+    ports:
+    - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: javac
+      POSTGRES_USER: java
+      POSTGRES_DB: konter
